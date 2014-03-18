@@ -1,0 +1,167 @@
+.message-theme-1 {
+  background-color:#9e3d42;
+  box-shadow:inset 0 0 6em #5e0107;
+}
+
+.theme-option.message-theme-1 {
+  box-shadow:inset 0 0 2em #5e0107;
+}
+
+.message-theme-1 .thumb {
+  border-bottom:2px solid #5e0107;
+}
+
+.message-theme-1 .headline {
+  color:#5b4243;
+}
+
+.message-theme-1 .replies, .message-theme-1 .time, .message-theme-1 .distance {
+  background-color:#5e1d22;
+}
+
+.message-theme-1 .replies {
+  border-top:1px solid #7e3d42;
+  border-right:1px solid #5e1d22;
+  border-bottom:1px solid #4e0d12;
+  border-left:1px solid #6e2d32;
+}
+
+.message-theme-2 {
+  background-color:#e0e366;
+  box-shadow:inset 0 0 6em #a3a711;
+}
+
+.theme-option.message-theme-2 {
+  box-shadow:inset 0 0 2em #a3a711;
+}
+
+.message-theme-2 .thumb {
+  border-bottom:2px solid #a3a711;
+}
+
+.message-theme-2 .headline {
+  color:#949668;
+}
+
+.message-theme-2 .replies, .message-theme-2 .time, .message-theme-2 .distance {
+  background-color:#969945;
+}
+
+.message-theme-2 .replies {
+  border-top:1px solid #b6b965;
+  border-right:1px solid #969945;
+  border-bottom:1px solid #868935;
+  border-left:1px solid #a6a955;
+}
+
+.message-theme-3 {
+  background-color:#8fb0f2;
+  box-shadow:inset 0 0 6em #234d9f;
+}
+
+.theme-option.message-theme-3 {
+  box-shadow:inset 0 0 2em #234d9f;
+}
+
+.message-theme-3 .thumb {
+  border-bottom:2px solid #234d9f;
+}
+
+.message-theme-3 .headline {
+  color:#636c82;
+}
+
+.message-theme-3 .replies, .message-theme-3 .time, .message-theme-3 .distance {
+  background-color:#455985;
+}
+
+.message-theme-3 .replies {
+  border-top:1px solid #6579a5;
+  border-right:1px solid #455985;
+  border-bottom:1px solid #354975;
+  border-left:1px solid #556995;
+}
+
+.message-theme-4 {
+  background-color:#a5d19d;
+  box-shadow:inset 0 0 6em #0fa229;
+}
+
+.theme-option.message-theme-4 {
+  box-shadow:inset 0 0 2em #0fa229;
+}
+
+.message-theme-4 .thumb {
+  border-bottom:2px solid #0fa229;
+}
+
+.message-theme-4 .headline {
+  color:#5a8763;
+}
+
+.message-theme-4 .replies, .message-theme-4 .time, .message-theme-4 .distance {
+  background-color:#368a45;
+}
+
+.message-theme-4 .replies {
+  border-top:1px solid #56aa65;
+  border-right:1px solid #368a45;
+  border-bottom:1px solid #267a35;
+  border-left:1px solid #469a55;
+}
+
+.message-theme-5 {
+  background-color:#fdfdfd;
+  box-shadow:inset 0 0 6em #aaa;
+}
+
+.theme-option.message-theme-5 {
+  box-shadow:inset 0 0 2em #aaa;
+}
+
+.message-theme-5 .thumb {
+  border-bottom:2px solid #aaa;
+}
+
+.message-theme-5 .headline {
+  color:#686868;
+}
+
+.message-theme-5 .replies, .message-theme-5 .time, .message-theme-5 .distance {
+  background-color:#aaa;
+}
+
+.message-theme-5 .replies {
+  border-top:1px solid #ccc;
+  border-right:1px solid #aaa;
+  border-bottom:1px solid #999;
+  border-left:1px solid #bbb;
+}
+
+.message-theme-6 {
+  background-color:#2a2a2a;
+  box-shadow:inset 0 0 6em #000;
+}
+
+.theme-option.message-theme-6 {
+  box-shadow:inset 0 0 2em #000;
+}
+
+.message-theme-6 .thumb {
+  border-bottom:2px solid #000;
+}
+
+.message-theme-6 .headline {
+  color:#444;
+}
+
+.message-theme-6 .replies, .message-theme-6 .time, .message-theme-6 .distance {
+  background-color:#282828;
+}
+
+.message-theme-6 .replies {
+  border-top:1px solid #484848;
+  border-right:1px solid #282828;
+  border-bottom:1px solid #181818;
+  border-left:1px solid #383838;
+}

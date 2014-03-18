@@ -1,0 +1,35 @@
+* {
+  font-family:'微软雅黑','黑体';
+}
+
+#about p {
+  color:#777;
+  font-size:14px;
+  padding:13px 16px;
+}
+
+#about-more h3, #sort-label, #no-message-label,
+#no-replies-label, #sort-narrow-label, #narrow-no-message-label,
+#narrow-no-replies-label, #active-cities h3, #active-tags h3, #additional-controls h3, #language h3, #query-info, #loading, #image-loading, #submit-loading {
+  font-style:normal;
+}
+
+#message-input {
+  font-weight:normal;
+}
+
+#reply-button, #message-map-button, #reply-map-button, .message .replies {
+  font-family:'微软雅黑','黑体';
+  font-style:normal;
+}
+
+.time, .distance {
+  font-family:'微软雅黑','黑体';
+  font-size:12px;
+  font-weight:normal;
+}
+
+.message .replies-map-button {
+  font-size:12px;
+  font-weight:normal;
+}

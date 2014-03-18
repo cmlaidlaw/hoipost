@@ -1,0 +1,65 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  
+  #force www.
+  #RewriteCond %{HTTP_HOST} !^$
+  #RewriteCond %{HTTP_HOST} !^www\. [NC]
+  #RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+  RewriteRule ^favicon.ico img/favicon.png [NC,L]
+
+  #enforce trailing slashes
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_URI} !(.*)/$
+  RewriteRule ^(.*)$ $1/ [L,R=301]
+
+  ##############################################################################
+  # API endpoints                                                              #
+  ##############################################################################
+
+  #API v1.1 endpoints
+  RewriteRule ^api/1.1/auth/in/$ api/1.1/auth/in.php [L,NC,QSA]
+  RewriteRule ^api/1.1/auth/out/$ api/1.1/auth/out.php [L,NC,QSA]
+  RewriteRule ^api/1.1/account/create/$ api/1.1/account/create.php [L,NC,QSA]
+  RewriteRule ^api/1.1/account/enable/$ api/1.1/account/enable.php [L,NC,QSA]
+  RewriteRule ^api/1.1/account/disable/$ api/1.1/account/disable.php [L,NC,QSA]
+  RewriteRule ^api/1.1/obj/$ api/1.1/obj/create.php [L,NC,QSA]
+  RewriteRule ^api/1.1/obj/([0-9]+)(\/)$ api/1.1/obj/retrieve.php?id=$1 [L,NC,QSA]
+  RewriteRule ^api/1.1/obj/([0-9]+)(\/)replies/$ api/1.1/obj/replies.php?id=$1 [L,NC,QSA]
+  RewriteRule ^api/1.1/obj/([0-9]+)(\/)update/$ api/1.1/obj/update.php?id=$1 [L,NC,QSA]
+  RewriteRule ^api/1.1/obj/([0-9]+)(\/)enable/$ api/1.1/obj/enable.php?id=$1 [L,NC,QSA]
+  RewriteRule ^api/1.1/obj/([0-9]+)(\/)disable/$ api/1.1/obj/disable.php?id=$1 [L,NC,QSA]
+  RewriteRule ^api/1.1/obj/([0-9]+)(\/)delete/$ api/1.1/obj/delete.php?id=$1 [L,NC,QSA]
+  RewriteRule ^api/1.1/search/ api/1.1/search/index.php [L,NC,QSA]
+  RewriteRule ^api/1.1/service/upgrade/$ api/1.1/service/upgrade.php [L,NC,QSA]
+  RewriteRule ^api/1.1/service/downgrade/$ api/1.1/service/downgrade.php [L,NC,QSA]
+  #RewriteRule ^api/1.1/vouchers(\/)$ api/1.1/vouchers/index.php [L,NC,QSA]
+
+  ##############################################################################
+  # UI pages                                                                   #
+  ##############################################################################
+
+  RewriteRule ^sign-in/$ sign-in.php [L,NC,QSA]
+  RewriteRule ^signed-out/$ signed-out.php [L,NC,QSA]
+
+  RewriteRule ^obj/([YyUu0-9AaBbCcDdEeFfGgHhTtJjKkLlMmNn]+)(\/)$ object.php?id=$1 [L,NC,QSA]
+  #RewriteRule ^obj/([0-9]+)(\/)$ object.php?id=$1 [L,NC,QSA]
+
+  RewriteRule ^dashboard/create/account/$ dashboard/create/account.php [L,NC,QSA]
+  RewriteRule ^dashboard/create/establishment/$ dashboard/create/establishment.php [L,NC,QSA]
+  RewriteRule ^dashboard/create/event/([0-9]+)(\/)$ dashboard/create/event.php?id=$1 [L,NC,QSA]
+  RewriteRule ^dashboard/create/voucher/$ dashboard/create/voucher.php [L,NC,QSA]
+  RewriteRule ^dashboard/update/event/([0-9]+)(\/)$ dashboard/update/event.php?id=$1 [L,NC,QSA]
+  RewriteRule ^dashboard/([0-9]+)(\/)$ dashboard/index.php?b=$1 [L,NC,QSA]
+  RewriteRule ^dashboard/analytics/([0-9]+)(\/)$ dashboard/analytics/index.php?id=$1 [L,NC,QSA]
+
+  RewriteRule ^form/([YyUu0-9AaBbCcDdEeFfGgHhTtJjKkLlMmNn]+)(\/)$ form/index.php?id=$1 [L,NC,QSA]
+
+  RewriteRule ^([a-z]{2,3})(\/)([0-9]+)(\/)$ index.php?c=$1&p=$3 [L,NC,QSA]
+
+  RewriteRule ^hk/$ index.php?c=hk [L,NC,QSA]
+  RewriteRule ^gz/$ index.php?c=gz [L,NC,QSA]
+  RewriteRule ^(/)?$ hk [L,QSA]
+
+</IfModule>

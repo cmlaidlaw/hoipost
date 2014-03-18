@@ -1,0 +1,115 @@
+.centered {
+  width:98em;
+}
+
+.obj-full-size {
+  display:block;
+  border-right:1px solid #ccc;
+  -moz-box-sizing:border-box;
+}
+
+.obj-location {
+  background-color:#555;
+}
+
+.obj-meta {
+  border:none;
+}
+.object-meta-map {
+  height:20em;
+}
+.object-meta-establishment, .object-meta-reply-to,
+.object-meta-share {
+  padding:2em;
+}
+.object-meta-reply-to, .object-meta-share {
+  position:relative;
+  float:left;
+  margin:0;
+  padding:1em;
+  width:17em;
+}
+
+.section-4-col, .section-5-col,
+.section-6-col, .section-7-col {
+  margin:0 1em 1em 0;
+}
+
+.section-1-col, .section-2-col,
+.section-3-col, .section-8-col {
+  margin:0 0 1em 0;
+}
+
+.section-1-col { width:12em; }
+.section-2-col { width:24em; }
+.section-3-col { width:36em; }
+.section-4-col { width:49em; }
+.section-5-col { width:61em; }
+.section-6-col { width:73em; }
+.section-7-col { width:85em; }
+.section-8-col { width:98em; }
+
+.section-content-1-col, .section-content-2-col,
+.section-content-3-col, .section-content-4-col,
+.section-content-5-col, .section-content-6-col,
+.section-content-7-col, .section-content-8-col {
+  margin:0 0.5em 0.5em 0.5em;
+}
+
+.section-content-1-col { width:9em; }
+.section-content-2-col { width:21em; }
+.section-content-3-col { width:33em; }
+.section-content-4-col { width:45.5em; }
+.section-content-5-col { width:57em; }
+.section-content-6-col { width:69em; }
+.section-content-7-col { width:81em; }
+.section-content-8-col { width:93em; }
+
+.form-input-1-col, .form-textarea-1-col { width:21em; }
+.form-input-2-col, .form-textarea-2-col { width:21em; }
+.form-input-3-col, .form-textarea-3-col { width:21em; }
+.form-input-4-col, .form-textarea-4-col { width:35em; }
+.form-input-5-col, .form-textarea-5-col { width:21em; }
+.form-input-6-col, .form-textarea-6-col { width:21em; }
+.form-input-7-col, .form-textarea-7-col { width:21em; }
+.form-input-8-col, .form-textarea-8-col { width:21em; }
+
+.form-select-1-col, .form-select-2.col, .form-select-3-col,
+.form-select-4-col, .form-select-5-col, .form-select-6-col,
+.form-select-7-col, .form-select-8-col, .form-select-9-col {
+  width:16em;
+}
+
+.form-time-select { width:9em; }
+
+#message-input-text, #event-input-text {
+  height:12em;
+}
+
+.collection-objects {
+  margin:1em;
+}
+#object-view {
+  box-sizing:content-box;
+}
+#object {
+  margin:0;
+  width:64em;
+}
+#object-meta {
+  margin:0;
+  width:34em;
+}
+#message-form {
+  padding:1em;
+}
+#message-description {
+  padding:1.5em;
+  max-width:60em;
+}
+#ui-dashboard-button {
+  float:right;
+  margin-top:0;
+}
+
+.dashboard-event-meta { width:29.5em; }
